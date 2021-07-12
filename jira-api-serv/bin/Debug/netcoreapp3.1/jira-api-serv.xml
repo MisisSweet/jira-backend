@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>jira-api-serv</name>
+    </assembly>
+    <members>
+        <member name="M:jira_api_serv.Controllers.SwaggerController.GetWorklog(System.String,System.String)">
+            <summary>
+            This is the API which will return a list of worklog
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
