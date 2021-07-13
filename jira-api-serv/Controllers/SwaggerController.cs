@@ -32,7 +32,7 @@ namespace jira_api_serv.Controllers
             return Json(response.Content);
         }
         [HttpPost]
-        public IActionResult AddWorklog([FromHeader] string email, [FromHeader] string password, string timeSpent, string comment)
+        public JsonResult AddWorklog([FromHeader] string email, [FromHeader] string password, string timeSpent, string comment)
         {
             var client = new RestClient("https://rita-api.atlassian.net/rest/api/3/issue/MT-3/worklog/");
             client.Timeout = -1;
@@ -59,7 +59,7 @@ namespace jira_api_serv.Controllers
             var body = JsonConvert.SerializeObject(qury);
             request.AddParameter("application/json", body, ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
-            return Ok();
+            return Json(response.Content);
         }
         [HttpDelete("{idworklog}")]
         public JsonResult DeleteLoan([FromHeader] string email, [FromHeader] string password,int idworklog)
