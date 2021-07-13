@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YAH+5eM8FrfoyDbbn+DnZcwL6Sbo32U0sFoZjekHaic7SHKgToAccL/EHS8R2Xn8Sh5LBfzS3eZg5YcROiC2yQ==",
+  "dgSpecHash": "Mx3WeQVxnDNYN9a9H8TnZ2vAdMRio0LaWhQCJsPtCkT2ucdiS55s6LaJd138gqUZb9Plncx01BzGjBxWWu5YrA==",
   "success": true,
-  "projectFilePath": "D:\\projects\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
+  "projectFilePath": "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.semashko\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\m.semashko\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

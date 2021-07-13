@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj": {}
+    "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj": {}
   },
   "projects": {
-    "D:\\projects\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj": {
+    "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
+        "projectUniqueName": "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
         "projectName": "jira-api-serv",
-        "projectPath": "D:\\projects\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
+        "projectPath": "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\jira-api-serv.csproj",
         "packagesPath": "C:\\Users\\m.semashko\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\jira-api-serv\\jira-api-serv\\obj\\",
+        "outputPath": "D:\\projects\\jira-api\\svn\\jira-api-serv\\jira-api-serv\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\programs\\Visual Studio 2019\\Shared\\NuGetPackages"

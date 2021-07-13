@@ -10,5 +10,40 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:jira_api_serv.Models.Comment.type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.Comment.version">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.Comment.content">
+            <summary>
+            Content
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.Content.type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.Content.content">
+            <summary>
+            Content
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.ContentT.text">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="P:jira_api_serv.Models.ContentT.type">
+            <summary>
+            Type
+            </summary>
+        </member>
     </members>
 </doc>

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using jira_api_serv.Models;
 
 namespace jira_api_serv.Controllers
 {
@@ -31,7 +32,7 @@ namespace jira_api_serv.Controllers
             return Json(response.Content);
         }
         [HttpPost]
-        public IActionResult AddWorklog([FromHeader] string email, [FromHeader] string password, string timeSpent)
+        public IActionResult AddWorklog([FromHeader] string email, [FromHeader] string password, string timeSpent, string comment)
         {
             var client = new RestClient("https://rita-api.atlassian.net/rest/api/3/issue/MT-3/worklog/");
             client.Timeout = -1;
@@ -39,10 +40,23 @@ namespace jira_api_serv.Controllers
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(Encoding.ASCII.GetBytes($"{email}:{password}")));
             request.AddHeader("Cookie", "atlassian.xsrf.token=db078c5a-73ad-466c-bd83-c4cf6a9a7fc5_358f93b579b156121f5bc23015e2a23fa3fc9ade_lin");
-            //var timeZone = DateTime.UtcNow.ToString("zzz").Replace(":", "");
-            //var dateTime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fff");
-            Worklog time = new Worklog { timeSpent = timeSpent};
-            var body = JsonConvert.SerializeObject(time);
+            JSON qury = new JSON
+            {
+                timeSpent = "1d",
+                comment = new Comment
+                {
+                    type = "doc",
+                    version = 1,
+                    content = new List<Content>() {
+                        new Content {
+                            type= "paragraph",
+                            content = new List<ContentT>() {
+                                new ContentT {
+                                    text = comment,
+                                    type= "text" } } }  }
+                }
+            };
+            var body = JsonConvert.SerializeObject(qury);
             request.AddParameter("application/json", body, ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
             return Ok();
